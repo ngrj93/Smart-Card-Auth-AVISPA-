@@ -1,0 +1,43 @@
+ --------------------------------------------------------------------------------
+ Author 	-	@Nagaraj Poti
+ Roll		-	20162010
+ Assignment 1 - AVISPA
+ --------------------------------------------------------------------------------
+
+
+ A few additions that were made from my side are :
+ 	
+ 	1. The addition of a random nonce to the message sent by the user
+ 		to the server at state 1 ensures message variability to segregate between
+ 		multiple requests.
+ 	
+ 	2.	A final ACK message is sent by the server once confirmation of the session
+ 		is done and the session keys are established.
+ 		
+ 	3.	An intruder is introduced in order to ensure the proper working of the 
+ 		protocol.
+ 		
+ 	4.	OFMC and ATSE backends were both tested upon and both returned "SAFE" states
+ 		under the goals considered. Both depth first and depth first search algorithms
+ 		were run under the ATSE mode to observe promising results.
+ 		
+ 	5. Code section is well documented with brief explanations of steps
+ 		
+ 		
+ 		 		
+ Challenges faced :
+ 
+ 	1.	Since we do not have the capability of computing modulus, some of the key
+ 		points of the protocol cannot be simulated using AVISPA tool.
+ 		
+ 	2. Deciding the goals that must be met for the protocol to be secure.
+ 	
+ 
+ 
+ Learning outcomes :
+ 
+ 	1.	I have a better understanding of how to use the AVISPA tool and programming in 
+ 		HLPSL language.
+ 		
+ 	2.	A lot of the complicated request-response mechanisms involved in a mutual 
+ 		authentication scheme were made evident by this exercise.
